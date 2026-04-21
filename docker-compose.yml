@@ -6,7 +6,7 @@ services:
     environment:
       # Required
       - JWT_SECRET=${JWT_SECRET:-220d1c3d928d870ddfc5f744523d4ad6e24ec0290e1e8cac5bf55d91a9ed71b2}
-      - INITIAL_PASSWORD=${INITIAL_PASSWORD:123456}
+      - INITIAL_PASSWORD=${INITIAL_PASSWORD:-123456}
       - DATA_DIR=${DATA_DIR:-/app/data} # Fixed to match Docker volume mount
       
       # Recommended runtime variables
