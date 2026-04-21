@@ -51,7 +51,7 @@ export default function MitmServerCard({ apiKeys, cloudEnabled, onStatusChange }
 
   const handleAction = (action) => {
     setActionError(null);
-    if (isWindows || status?.hasCachedPassword) {
+    if (status?.hasCachedPassword) {
       doAction(action, "");
     } else {
       setPendingAction(action);
